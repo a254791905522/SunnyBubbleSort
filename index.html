@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Bubble Sort</title>
+  <style>
+    :root {
+      --sky: #85cfff;
+      --sun: #ffe98c;
+      --card: rgba(255, 255, 255, 0.9);
+      --ink: #2f466b;
+      --soft: #6682a8;
+      --line: #f5b24c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, var(--sky) 0%, #cfeef2 62%, var(--sun) 100%);
+    }
+    .wrap {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 72px;
+    }
+    .hero, .section {
+      background: var(--card);
+      border: 4px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 18px 44px rgba(64, 90, 120, 0.14);
+      margin-bottom: 24px;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.05;
+    }
+    h1 { font-size: clamp(40px, 7vw, 72px); }
+    h2 { font-size: clamp(24px, 4vw, 36px); }
+    p, li {
+      font-size: 18px;
+      line-height: 1.7;
+      color: var(--soft);
+    }
+    .lead {
+      font-size: 22px;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .shot {
+      background: rgba(255,255,255,0.82);
+      border: 3px solid rgba(245, 178, 76, 0.65);
+      border-radius: 24px;
+      padding: 12px;
+    }
+    .shot img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.7);
+      border-radius: 20px;
+      padding: 18px;
+      border: 2px solid rgba(245, 178, 76, 0.45);
+    }
+    a {
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Sunny Bubble Sort</h1>
+      <p class="lead">A bright and relaxing color sorting puzzle designed for quick, cheerful play sessions.</p>
+      <p>Move colorful balls between tubes, match each tube by color, and enjoy a sunny interface, smooth animation, and gentle puzzle progression. The game is fully offline and easy to understand, while later stages provide a satisfying challenge for puzzle fans.</p>
+    </section>
+
+    <section class="section">
+      <h2>Game Features</h2>
+      <div class="meta">
+        <div class="badge">
+          <p><strong>10 handcrafted-style levels</strong> with auto-generated solvable puzzle layouts and a clear difficulty curve.</p>
+        </div>
+        <div class="badge">
+          <p><strong>Clean one-tap controls</strong> with undo, restart, level select, star ratings, and progress saving.</p>
+        </div>
+        <div class="badge">
+          <p><strong>Sunny visual style</strong> with warm colors, soft clouds, and a lighthearted casual puzzle atmosphere.</p>
+        </div>
+        <div class="badge">
+          <p><strong>Offline gameplay</strong> with no account system, no online dependency, and no personal data collection.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How to Play</h2>
+      <ul>
+        <li>Tap a tube to select the top ball.</li>
+        <li>Tap another tube to move the ball if the target tube is empty or the top color matches.</li>
+        <li>Sort every non-empty tube into a single color to clear the level.</li>
+        <li>Use Undo or Restart whenever you want to rethink the puzzle.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="grid">
+        <div class="shot"><img src="测试游戏图片/Sunny Bubble Sort.png" alt="Sunny Bubble Sort home screen"></div>
+        <div class="shot"><img src="测试游戏图片/iphone_6.3/02.png" alt="Sunny Bubble Sort level select"></div>
+        <div class="shot"><img src="测试游戏图片/iphone_6.3/03.png" alt="Sunny Bubble Sort gameplay"></div>
+        <div class="shot"><img src="测试游戏图片/iphone_6.3/04.png" alt="Sunny Bubble Sort success screen"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Support</h2>
+      <p>For policy details, read the <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+  </div>
+</body>
+</html>
