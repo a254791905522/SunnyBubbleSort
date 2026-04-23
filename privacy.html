@@ -3,77 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Sunny Bubble Sort</title>
+  <title>Privacy Policy - SunnyBubbleMatchSorts</title>
+  <meta name="description" content="Privacy Policy for SunnyBubbleMatchSorts.">
   <style>
+    :root {
+      --sky: #8ed2ff;
+      --sun: #fff0a6;
+      --panel: rgba(255, 255, 255, 0.92);
+      --line: rgba(245, 178, 76, 0.62);
+      --text: #2f466b;
+      --muted: #6883a7;
+      --accent: #f5b24c;
+      --shadow: rgba(66, 92, 126, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: "Avenir Next", Arial, sans-serif;
-      background: linear-gradient(180deg, #8cd0ff 0%, #dff6ff 58%, #fff0a6 100%);
-      color: #284567;
+      font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.34), transparent 22%),
+        radial-gradient(circle at 86% 16%, rgba(255, 255, 255, 0.2), transparent 18%),
+        linear-gradient(180deg, #84cbff 0%, #d8f1ff 60%, #fff0a6 100%);
     }
+
     main {
-      width: min(900px, calc(100% - 32px));
-      margin: 32px auto;
-      background: rgba(255,255,255,0.93);
-      border: 4px solid #f4b24c;
+      width: min(920px, calc(100vw - 32px));
+      margin: 32px auto 64px;
+      padding: 34px;
+      background: var(--panel);
+      border: 3px solid var(--line);
       border-radius: 28px;
-      padding: 30px;
-      box-shadow: 0 16px 42px rgba(43, 74, 112, 0.14);
+      box-shadow: 0 18px 50px var(--shadow);
     }
-    h1, h2 {
-      margin-top: 0;
+
+    h1, h2, p {
+      margin: 0;
     }
+
     h1 {
-      font-size: clamp(34px, 6vw, 52px);
-      margin-bottom: 18px;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      margin-bottom: 10px;
     }
+
+    .meta {
+      color: var(--accent);
+      margin-bottom: 28px;
+      font-weight: 700;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 20px;
+      border-radius: 999px;
+      border: 2px solid rgba(245, 178, 76, 0.5);
+      color: var(--text);
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.82);
+      font-weight: 800;
+    }
+
+    section + section {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(245, 178, 76, 0.2);
+    }
+
     h2 {
-      margin-top: 26px;
-      font-size: 24px;
+      margin-bottom: 12px;
+      font-size: 1.35rem;
     }
-    p, li {
-      line-height: 1.7;
-      font-size: 17px;
-      color: #5c7698;
+
+    p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1rem;
     }
-    ul {
-      padding-left: 20px;
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 26px 22px;
+      }
     }
   </style>
 </head>
 <body>
   <main>
+    <div class="topbar">
+      <a class="button" href="index.html">Back to Home</a>
+    </div>
     <h1>Privacy Policy</h1>
-    <p>Effective date: April 20, 2026</p>
-    <p>Sunny Bubble Sort is designed as an offline single-player puzzle game. This app does not require account registration and does not collect personal information from users.</p>
+    <p class="meta">SunnyBubbleMatchSorts</p>
 
-    <h2>Information We Collect</h2>
-    <p>We do not collect, store, or share personal data such as your name, email address, phone number, location, contacts, photos, or payment details.</p>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        SunnyBubbleMatchSorts is an offline single-player puzzle game. The game is designed to work
+        without account registration, online matchmaking, advertising SDKs, or analytics services.
+      </p>
+    </section>
 
-    <h2>Local Device Data</h2>
-    <p>The game stores limited gameplay data locally on your device, including:</p>
-    <ul>
-      <li>Unlocked levels</li>
-      <li>Star ratings</li>
-      <li>Best move counts</li>
-      <li>Music and sound settings</li>
-    </ul>
-    <p>This data is used only to preserve your in-game progress and preferences.</p>
+    <section>
+      <h2>Information We Collect</h2>
+      <p>
+        SunnyBubbleMatchSorts does not collect, transmit, or sell personal information. The game does
+        not request your name, email address, phone number, location, contacts, photos, microphone,
+        camera, or payment details.
+      </p>
+    </section>
 
-    <h2>Internet and Third Parties</h2>
-    <p>Sunny Bubble Sort does not require an internet connection to play. The app does not include third-party analytics, advertising SDKs, or social login systems.</p>
+    <section>
+      <h2>Local Data Storage</h2>
+      <p>
+        The game stores gameplay progress locally on your device, including unlocked levels, star ratings,
+        best move counts, and settings preferences such as audio choices. This information stays on your
+        device and is not uploaded to external servers by the game.
+      </p>
+    </section>
 
-    <h2>Children's Privacy</h2>
-    <p>This app does not knowingly collect any personal information from children or adults. Since no personal data is collected, there is no personal information to share or sell.</p>
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>
+        Because SunnyBubbleMatchSorts does not collect personal information, it does not knowingly gather
+        personal data from children or any other users.
+      </p>
+    </section>
 
-    <h2>Data Sharing</h2>
-    <p>We do not sell, rent, trade, or share user data with third parties.</p>
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>
+        SunnyBubbleMatchSorts does not rely on third-party analytics, ad networks, social login systems,
+        or external account services for normal gameplay. If this changes in a future release, this policy
+        will be updated before release.
+      </p>
+    </section>
 
-    <h2>Changes to This Policy</h2>
-    <p>If the app's data practices change in the future, this privacy policy will be updated accordingly before those changes take effect.</p>
+    <section>
+      <h2>Data Security</h2>
+      <p>
+        Since gameplay data is stored locally and not transmitted to our servers, privacy exposure is
+        limited to the security of your own device and platform environment.
+      </p>
+    </section>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, please contact the developer through the support information provided on the App Store listing.</p>
+    <section>
+      <h2>Policy Changes</h2>
+      <p>
+        We may update this Privacy Policy if the game’s data practices change. Any future update will be
+        reflected on this page together with a revised effective date.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        If you have any questions about this, you can contact the developer using the information below.
+        <br>
+        Wang Cong
+        <br>
+        +86 18688152210
+        <br>
+        215117673@qq.com
+      </p>
+    </section>
   </main>
 </body>
 </html>
